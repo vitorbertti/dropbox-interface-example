@@ -1,4 +1,16 @@
 <div class="container {{ variant }} {{ first }}">
+  <div class="header-wrapper">
+    <div class="header">
+      <h1>
+        <fa-icon class="logo" [icon]="faDropbox"></fa-icon>
+        <span>Dropbox interface example</span>
+      </h1>
+
+      <button type="button">
+        {{ buttonText }}
+      </button>
+    </div>
+  </div>
   <div class="content">
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
