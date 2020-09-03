@@ -6,13 +6,20 @@
   width: 100%;
   height: 100%;
   background: var(--color-tertiary);
+  transition: 0.5s transform cubic-bezier(0.5, 0, 0, 1);
+  transform: translateX(100%);
 }
 
 @media (min-width: 1024px) {
   .container {
     width: calc(100% / 3);
     box-shadow: -7px 0 5px -6px rba(0, 0, 0, 0.075);
+    transform: translateX(0);
   }
+
+  /* .scrollOpen {
+    transform: translateX(0);
+  } */
 }
 
 @media (min-width: 1440px) {
